@@ -30,8 +30,8 @@ resource "aws_network_interface" "nicByTFO" {
 resource "aws_instance" "ec2ByTFOtest" {
   ami           = "${var.ami["ami2"]}"
   instance_type = "${var.instance_type[1]["type2"]}"
-  tags = var.objectVar
-  #name = var.objectVar["name"]
+  tags = var.objectVar1
+  #name = var.objectVar1["name"]
 
   network_interface {
     network_interface_id = "${aws_network_interface.nicByTFO.id}"
