@@ -32,7 +32,7 @@ resource "aws_instance" "ec2ByTFOtest" {
     device_index         = var.numberType
   }
 }
-
+#this is a variable
 variable "access_key" {}
 
 variable "secret_key" {}
