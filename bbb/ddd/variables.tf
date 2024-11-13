@@ -87,7 +87,7 @@ variable "mapvar" {
 }
 
 
-
+#declare a variable
 variable "objectVar" {
  default = {
    name = "My Vm Instance"
