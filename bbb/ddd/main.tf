@@ -4,6 +4,13 @@ provider "aws" {
   region              = "${var.region}"
 }
 
+provider "aws" {
+  alias               = "Secondary"
+  access_key          = "${var.access_key}"
+  secret_key          = "${var.secret_key}"
+  region              = "${var.region}"
+}
+
 resource "aws_vpc" "default" {
 	cidr_block = "10.0.0.0/26"
 	tags = {
